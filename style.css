@@ -12,6 +12,10 @@ body {
     justify-content: center;
     background: black;
     padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar a {
@@ -33,7 +37,7 @@ body {
 
 .container {
     text-align: center;
-    padding: 20px;
+    padding: 80px 20px 20px; /* Dodatkowy padding dla paska nawigacyjnego */
 }
 
 .title {
@@ -57,8 +61,10 @@ body {
 #meme-image {
     display: block;
     margin: 20px auto;
-    max-width: 100%;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
+    border: 5px solid black;
 }
 
 button {
@@ -108,18 +114,18 @@ a:active {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
     gap: 15px;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
+    max-width: 900px;
     margin: 20px auto;
 }
 
 .gallery img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
     border-radius: 8px;
+    border: 5px solid black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }

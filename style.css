@@ -7,6 +7,30 @@ body {
     padding: 0;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: black;
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
 .container {
     text-align: center;
     padding: 20px;
@@ -30,6 +54,13 @@ body {
     }
 }
 
+#meme-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
 button {
     background-color: white;
     color: black;
@@ -39,7 +70,8 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    margin: 10px;
+    display: block;
+    margin: 20px auto;
 }
 
 button:hover {
